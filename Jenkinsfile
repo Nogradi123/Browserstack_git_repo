@@ -26,6 +26,7 @@ pipeline {
                 ]) {
                     sh 'npm run browserstack-mocha-test'
                 }
+                browserStackReportPublisher 'automate'
             }
         }
     }
